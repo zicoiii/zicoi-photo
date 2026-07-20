@@ -6,27 +6,10 @@
   <meta name="theme-color" content="#eee6ff" />
   <meta name="description" content="紫菜不菜 Photobooth 相框模板挑选页面" />
   <title>相框模板挑选｜紫菜不菜 Photobooth</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- 思源宋体 webfont：字体文件和整个站点都托管在 GitHub Pages（海外）。
-       国内不挂 VPN 时海外资源常加载失败，浏览器拿不到 webfont 就回退成黑体。
-       iPhone/iPad 系统自带 Songti SC 宋体，根本无需下载，故仅对非 iOS 设备注入
-       webfont 作为增强；iOS 直接走系统宋体，不依赖网络、不爬梯子也能显示宋体。 -->
-  <script>
-    (function () {
-      var ua = navigator.userAgent || '';
-      var isIOS = /iPad|iPhone|iPod/.test(ua) ||
-                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-      if (!isIOS) {
-        var s = document.createElement('style');
-        s.textContent =
-          '@font-face{font-family:"Noto Serif SC";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/cs-400.woff2") format("woff2");unicode-range:U+4E00-9FFF,U+3400-4DBF,U+20000-2A6DF,U+2A700-2B73F,U+2B740-2B81F,U+2B820-2CEAF,U+F900-FAFF,U+2F800-2FA1F;}' +
-          '@font-face{font-family:"Noto Serif SC";font-style:normal;font-weight:600;font-display:swap;src:url("assets/fonts/cs-600.woff2") format("woff2");unicode-range:U+4E00-9FFF,U+3400-4DBF,U+20000-2A6DF,U+2A700-2B73F,U+2B740-2B81F,U+2B820-2CEAF,U+F900-FAFF,U+2F800-2FA1F;}' +
-          '@font-face{font-family:"Noto Serif SC";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/latin-400.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}' +
-          '@font-face{font-family:"Noto Serif SC";font-style:normal;font-weight:600;font-display:swap;src:url("assets/fonts/latin-600.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}';
-        document.head.appendChild(s);
-      }
-    })();
-  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc/chinese-simplified.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc/latin.css" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <div class="ambient ambient-1"></div>
