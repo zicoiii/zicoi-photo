@@ -1,31 +1,8 @@
-# 紫菜不菜 Photobooth 相框模板网站
+# 紫菜不菜·Photobooth 相框模板网站
 
 ## 本版模板
 
 本版共 22 款模板，已统一重新编号、重新命名，并将图片文件统一为 `template-zc-XX.png`。
-
-- ZC-01｜糖果萌宠婚礼｜`template-zc-01.png`
-- ZC-02｜粉色凯蒂婚礼｜`template-zc-02.png`
-- ZC-03｜紫色香槟手绘｜`template-zc-03.png`
-- ZC-04｜橙色星星童话｜`template-zc-04.png`
-- ZC-05｜酒红线稿新人｜`template-zc-05.png`
-- ZC-06｜玫粉丝带酒杯｜`template-zc-06.png`
-- ZC-07｜复古酒红晚宴｜`template-zc-07.png`
-- ZC-08｜奶油酒红蝴蝶结｜`template-zc-08.png`
-- ZC-09｜复古手绘蛋糕｜`template-zc-09.png`
-- ZC-10｜巧克力复古囍字｜`template-zc-10.png`
-- ZC-11｜浅粉花卉晚宴｜`template-zc-11.png`
-- ZC-12｜红色涂鸦婚礼｜`template-zc-12.png`
-- ZC-13｜花园茶会婚礼｜`template-zc-13.png`
-- ZC-14｜奶油红线新人｜`template-zc-14.png`
-- ZC-15｜法式烛光晚宴｜`template-zc-15.png`
-- ZC-16｜中式鎏金囍字｜`template-zc-16.png`
-- ZC-17｜百日萌宠派对｜`template-zc-17.png`
-- ZC-18｜彩屑玫瑰婚礼｜`template-zc-18.png`
-- ZC-19｜粉色蝴蝶结酒杯｜`template-zc-19.png`
-- ZC-20｜奶油萌宠婚礼｜`template-zc-20.png`
-- ZC-21｜柔粉极简婚礼｜`template-zc-21.png`
-- ZC-22｜魔法学院婚礼｜`template-zc-22.png`
 
 ## 后续新增模板
 
@@ -54,9 +31,3 @@
 - 保留模板浏览、放大预览、收藏心选和最终选定。
 - 选定后可复制模板编号、分享选择，并查看客服二维码。
 
-
-## 电脑端专用版
-- 删除手机端单独布局与手机底部操作栏。
-- 删除 `mobile-preview.html`。
-- 页面最小宽度为 1024px，模板固定一行三款。
-- 无表单挑选、收藏、放大、复制编号及客服二维码功能保留。
