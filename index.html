@@ -6,9 +6,6 @@
   <meta name="theme-color" content="#eee6ff" />
   <meta name="description" content="紫菜不菜 Photobooth 相框模板挑选页面" />
   <title>相框模板挑选｜紫菜不菜 Photobooth</title>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc/chinese-simplified.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-serif-sc/latin.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,7 +14,7 @@
 
   <header class="topbar">
     <a class="brand-mini" href="#top" aria-label="返回顶部">
-      <img src="assets/logo.png" alt="Zicoi Photobooth" />
+      <img src="assets/logo.png" alt="Zicoi Photobooth" draggable="false" />
       <span class="brand-name">紫菜不菜·Photobooth</span>
     </a>
     <button class="favorites-pill" id="openFavorites" type="button" aria-label="查看收藏">
@@ -29,14 +26,14 @@
   <main id="top">
     <section class="hero">
       <div class="hero-logo-wrap">
-        <img class="hero-logo" src="assets/logo.png" alt="Zicoi Photobooth Logo" />
+        <img class="hero-logo" src="assets/logo.png" alt="Zicoi Photobooth Logo" draggable="false" />
       </div>
       <p class="eyebrow">ZICOI PHOTOBOOTH · FRAME COLLECTION</p>
       <h1>挑选属于你们的<br />专属相框模板</h1>
       <p class="hero-copy">
         婚礼、生日、派对、活动——每一个值得留念的瞬间，<br />
         都配得上一款用心设计的专属相框。<br />
-        慢慢挑，选中后点击<strong>“确认选择该模板”</strong>就行✨
+        慢慢挑，喜欢的可以先加入心选，选定后将模板编号发送给客服即可✨
       </p>
       <a class="primary-link" href="#templates">开始挑选 <span aria-hidden="true">↓</span></a>
     </section>
@@ -49,7 +46,7 @@
       <div class="step-grid">
         <article><b>01</b><p>浏览并点击模板查看完整设计</p></article>
         <article><b>02</b><p>点击爱心，先收藏喜欢的款式</p></article>
-        <article><b>03</b><p>确认一款模板并填写活动资料</p></article>
+        <article><b>03</b><p>选定模板，将编号发送给客服确认</p></article>
       </div>
       <p class="note">模板中的姓名、日期、文字及部分配色，可根据婚礼或活动主视觉调整。</p>
     </section>
@@ -66,128 +63,24 @@
       <div class="template-grid" id="templateGrid"></div>
     </section>
 
-    <section class="selection-form-section section-shell" id="selectionFormSection" aria-labelledby="formTitle">
-      <div class="form-card">
-        <div class="section-heading">
-          <span>YOUR SELECTION</span>
-          <h2 id="formTitle">提交模板选择</h2>
-        </div>
-
-        <div class="selected-preview empty" id="selectedPreview">
-          <div class="selected-image-wrap">
-            <img id="selectedImage" alt="" />
-          </div>
-          <div>
-            <small>当前选择</small>
-            <strong id="selectedCode">暂未选择模板</strong>
-            <button class="text-button" id="changeSelection" type="button">返回模板区挑选</button>
-          </div>
-        </div>
-
-        <form id="selectionForm" enctype="multipart/form-data" novalidate>
-          <input type="hidden" id="templateCode" name="templateCode" />
-
-          <fieldset class="choice-fieldset three-options">
-            <legend>活动类型</legend>
-            <label class="radio-card">
-              <input type="radio" name="eventType" value="婚礼" checked />
-              <span>婚礼</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="eventType" value="生日" />
-              <span>生日</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="eventType" value="其他活动" />
-              <span>其他活动</span>
-            </label>
-          </fieldset>
-
-          <div id="weddingFields" class="conditional-fields two-columns">
-            <label class="field">
-              <span>新娘名字 <em>*</em></span>
-              <input type="text" id="brideName" name="brideName" placeholder="请输入新娘名字" autocomplete="name" />
-            </label>
-            <label class="field">
-              <span>新郎名字 <em>*</em></span>
-              <input type="text" id="groomName" name="groomName" placeholder="请输入新郎名字" autocomplete="name" />
-            </label>
-          </div>
-
-          <div id="birthdayFields" class="conditional-fields" hidden>
-            <label class="field">
-              <span>生日主角姓名 <em>*</em></span>
-              <input type="text" id="birthdayName" name="birthdayName" placeholder="请输入生日主角姓名" autocomplete="name" />
-            </label>
-          </div>
-
-          <div id="eventNameField" class="conditional-fields" hidden>
-            <label class="field">
-              <span>活动名称 <em>*</em></span>
-              <input type="text" id="eventName" name="eventName" placeholder="例如：品牌周年派对" />
-            </label>
-          </div>
-
-          <label class="field">
-            <span>婚礼／活动日期 <em>*</em></span>
-            <input type="date" id="eventDate" name="eventDate" />
-          </label>
-
-          <label class="field">
-            <span>联系微信或手机号 <em>*</em></span>
-            <input type="text" id="contact" name="contact" placeholder="方便客服与你确认设计细节" autocomplete="tel" />
-          </label>
-
-          <label class="upload-field" for="visualUpload">
-            <input type="file" id="visualUpload" name="visualUpload" accept="image/*,.pdf" />
-            <span class="upload-icon" aria-hidden="true">＋</span>
-            <strong>上传婚礼／活动主视觉</strong>
-            <small>支持 JPG、PNG、WEBP 或 PDF，建议不超过 10MB</small>
-            <span class="upload-file-name" id="uploadFileName"></span>
-          </label>
-          <div class="upload-preview" id="uploadPreview" hidden>
-            <img id="uploadPreviewImage" alt="主视觉预览" />
-          </div>
-
-          <label class="field">
-            <span>其他修改说明</span>
-            <textarea id="notes" name="notes" rows="4" placeholder="例如：希望改成浅紫色、增加英文名字等"></textarea>
-          </label>
-
-          <label class="consent">
-            <input type="checkbox" id="consent" />
-            <span>我已确认以上信息，并同意客服通过预留联系方式与我沟通。</span>
-          </label>
-
-          <p class="form-error" id="formError" role="alert"></p>
-          <button class="submit-button" type="submit">确认并生成提交单</button>
-        </form>
-      </div>
-    </section>
-
     <section class="contact-section section-shell">
       <div class="contact-card">
         <div>
           <p class="eyebrow">NEED HELP?</p>
           <h2>还没决定好？</h2>
-          <p>可以先收藏喜欢的款式，扫码添加客服，我们会根据活动风格协助推荐。</p>
+          <p>选定模板后复制编号发送给客服；还没决定好，也可以把心选款式一起发给我们协助推荐。</p>
         </div>
-        <img src="assets/wechat-qr.png" alt="紫菜不菜 Photobooth 客服微信二维码" />
+        <img src="assets/wechat-qr.png" alt="紫菜不菜 Photobooth 客服微信二维码" draggable="false" />
       </div>
     </section>
   </main>
-
-  <nav class="mobile-dock" aria-label="快捷操作">
-    <button type="button" id="dockFavorites"><span>♡</span>心选 <b id="dockFavoriteCount">0</b></button>
-    <button type="button" id="dockSelected"><span>✓</span><span id="dockSelectedText">尚未选择</span></button>
-  </nav>
 
   <!-- 模板大图 -->
   <dialog class="template-dialog" id="templateDialog">
     <button class="dialog-close" id="closeTemplateDialog" type="button" aria-label="关闭">×</button>
     <div class="dialog-content">
       <div class="dialog-image-stage">
-        <img id="dialogImage" alt="" />
+        <img id="dialogImage" alt="" draggable="false" />
       </div>
       <div class="dialog-info">
         <div>
@@ -196,7 +89,7 @@
           <p>姓名、日期、文字及部分配色均可按活动主视觉调整。</p>
         </div>
         <button class="favorite-action" id="dialogFavorite" type="button">♡ 加入心选</button>
-        <button class="confirm-template" id="confirmTemplate" type="button">确认选择该模板</button>
+        <button class="confirm-template" id="confirmTemplate" type="button">选定这款模板</button>
       </div>
     </div>
   </dialog>
@@ -213,27 +106,38 @@
     <div id="favoritesList" class="favorites-list"></div>
   </dialog>
 
-  <!-- 提交确认 -->
-  <dialog class="success-dialog" id="successDialog">
-    <button class="dialog-close static" id="closeSuccess" type="button" aria-label="关闭">×</button>
-    <div class="success-content">
+  <!-- 最终选择确认 -->
+  <dialog class="success-dialog selection-dialog" id="selectionDialog">
+    <button class="dialog-close static selection-close" id="closeSelection" type="button" aria-label="关闭">×</button>
+    <div class="success-content selection-content">
       <div class="success-mark">✓</div>
-      <p class="eyebrow">SELECTION READY</p>
-      <h2>模板选择已整理完成</h2>
-      <p>请点击下方按钮复制或分享提交信息，并将主视觉原文件一并发送给客服。</p>
-      <pre id="submissionSummary"></pre>
+      <p class="eyebrow">FRAME SELECTED</p>
+      <h2 id="selectionHeading">已选定模板</h2>
+
+      <div class="selection-dialog-preview selected-image-wrap">
+        <img id="selectionImage" alt="已选模板预览" draggable="false" />
+      </div>
+
+      <div class="selection-code-card">
+        <small>模板编号</small>
+        <strong id="selectionCode">—</strong>
+        <span id="selectionTitle"></span>
+      </div>
+
+      <p>请复制模板编号并发送给客服，我们会继续与你确认活动信息、文字、配色及主视觉。</p>
+
       <div class="success-actions">
-        <button class="submit-button" id="copySummary" type="button">复制提交信息</button>
-        <button class="secondary-button" id="shareSummary" type="button">分享给客服</button>
-        <button class="secondary-button" id="downloadSummary" type="button">下载提交单</button>
+        <button class="submit-button" id="copySelectedCode" type="button">复制模板编号</button>
+        <button class="secondary-button" id="shareSelected" type="button">分享我的选择</button>
+        <button class="secondary-button" id="openFavoritesFromSelection" type="button">查看我的心选</button>
       </div>
+
       <div class="success-qr">
-        <img src="assets/wechat-qr.png" alt="客服微信二维码" />
-        <span>扫码添加客服</span>
+        <img src="assets/wechat-qr.png" alt="客服微信二维码" draggable="false" />
+        <span>长按识别或截图保存客服二维码</span>
       </div>
-      <p class="small-print">
-        当前版本为前端展示版，信息会保存在本设备。接入线上表单接口后，可自动进入你的后台。
-      </p>
+
+      <button class="text-button selection-rechoose" id="rechooseTemplate" type="button">返回模板区重新挑选</button>
     </div>
   </dialog>
 
