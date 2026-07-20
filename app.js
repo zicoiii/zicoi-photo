@@ -20,7 +20,11 @@ const templates = [
   { code: "ZC-19", thumb: "assets/thumb-zc-19.webp", image: "assets/template-zc-19.webp", title: "粉色蝴蝶结酒杯" },
   { code: "ZC-20", thumb: "assets/thumb-zc-20.webp", image: "assets/template-zc-20.webp", title: "奶油萌宠婚礼" },
   { code: "ZC-21", thumb: "assets/thumb-zc-21.webp", image: "assets/template-zc-21.webp", title: "柔粉极简婚礼" },
-  { code: "ZC-22", thumb: "assets/thumb-zc-22.webp", image: "assets/template-zc-22.webp", title: "魔法学院婚礼" }
+  { code: "ZC-22", thumb: "assets/thumb-zc-22.webp", image: "assets/template-zc-22.webp", title: "魔法学院婚礼" },
+  { code: "ZC-23", thumb: "assets/thumb-zc-23.webp", image: "assets/template-zc-23.webp", title: "星星人婚礼" },
+  { code: "ZC-24", thumb: "assets/thumb-zc-24.webp", image: "assets/template-zc-24.webp", title: "酒红花边婚礼" },
+  { code: "ZC-25", thumb: "assets/thumb-zc-25.webp", image: "assets/template-zc-25.webp", title: "复古红线婚礼" },
+  { code: "ZC-26", thumb: "assets/thumb-zc-26.webp", image: "assets/template-zc-26.webp", title: "薄荷绿婚礼" }
 ];
 
 const state = {
