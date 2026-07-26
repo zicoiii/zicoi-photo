@@ -24,7 +24,13 @@ const templates = [
   { code: "ZC-23", thumb: "assets/thumb-zc-23.webp", image: "assets/template-zc-23.webp", title: "星星人婚礼" },
   { code: "ZC-24", thumb: "assets/thumb-zc-24.webp", image: "assets/template-zc-24.webp", title: "酒红花边婚礼" },
   { code: "ZC-25", thumb: "assets/thumb-zc-25.webp", image: "assets/template-zc-25.webp", title: "复古红线婚礼" },
-  { code: "ZC-26", thumb: "assets/thumb-zc-26.webp", image: "assets/template-zc-26.webp", title: "薄荷绿婚礼" }
+  { code: "ZC-26", thumb: "assets/thumb-zc-26.webp", image: "assets/template-zc-26.webp", title: "薄荷绿婚礼" },
+  { code: "ZC-27", thumb: "assets/thumb-zc-27.webp", image: "assets/template-zc-27.webp", title: "法式绿野婚礼" },
+  { code: "ZC-28", thumb: "assets/thumb-zc-28.webp", image: "assets/template-zc-28.webp", title: "凯蒂猫ins风婚礼" },
+  { code: "ZC-29", thumb: "assets/thumb-zc-29.webp", image: "assets/template-zc-29.webp", title: "猫咪森系婚礼" },
+  { code: "ZC-30", thumb: "assets/thumb-zc-30.webp", image: "assets/template-zc-30.webp", title: "玫瑰粉色婚礼" },
+  { code: "ZC-31", thumb: "assets/thumb-zc-31.webp", image: "assets/template-zc-31.webp", title: "奶油水彩婚礼" },
+  { code: "ZC-32", thumb: "assets/thumb-zc-32.webp", image: "assets/template-zc-32.webp", title: "牛仔复古婚礼" }
 ];
 
 const state = {
