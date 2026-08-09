@@ -34,6 +34,11 @@ const templates = [
   { code: "ZC-33", thumb: "assets/thumb-zc-33.webp", image: "assets/template-zc-33.webp", title: "法式红色线条" },
   { code: "ZC-34", thumb: "assets/thumb-zc-34.webp", image: "assets/template-zc-34.webp", title: "紫色日历ins风" },
   { code: "ZC-35", thumb: "assets/thumb-zc-35.webp", image: "assets/template-zc-35.webp", title: "棕木质感轻奢" },
+  { code: "ZC-36", thumb: "assets/thumb-zc-36.webp", image: "assets/template-zc-36.webp", title: "冰蓝羽梦幻境" },
+  { code: "ZC-37", thumb: "assets/thumb-zc-37.webp", image: "assets/template-zc-37.webp", title: "线条小狗生日派对" },
+  { code: "ZC-38", thumb: "assets/thumb-zc-38.webp", image: "assets/template-zc-38.webp", title: "小新甜蜜日记" },
+  { code: "ZC-39", thumb: "assets/thumb-zc-39.webp", image: "assets/template-zc-39.webp", title: "紫调复古镜面" },
+
 
 
 ];
